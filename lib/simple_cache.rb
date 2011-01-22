@@ -22,7 +22,7 @@ Copyright (c) 2005-2011 David Heinemeier Hansson
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 =end
-
+require 'digest/md5'
 module SimpleCache
     #TODO: add a super-class and implement FileSystemCache
     class MemoryCache
