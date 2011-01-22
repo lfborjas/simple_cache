@@ -1,6 +1,19 @@
 = simple_cache
 
-Description goes here.
+Simple cache store. For now, only a memory based solution exists.
+
+Based on ActiveRecord::Cache
+
+It works like a hash, but stores the last access to a key to expire it after a given time. Also
+accepts a  `max_size` for limiting the cache growth. 
+
+= Usage
+
+    store = SimpleCache::MemoryCache.new :timeout => 10 #seconds
+    store[:foo] = "bar"
+    puts store[:foo] #=> "bar"
+    sleep 10
+    puts store[:foo] #=> nil
 
 == Contributing to simple_cache
  

@@ -15,9 +15,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "simple_cache"
   gem.homepage = "http://github.com/lfborjas/simple_cache"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "luis.borjas@escolarea.com"
+  gem.summary = %Q{General purpose cache}
+  gem.description = %Q{Pure ruby caching solution, inspired by ActiveRecord::Cache}
+  gem.email = "luisfelipe@lfborjas.com"
   gem.authors = ["lfborjas"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
